@@ -1,0 +1,42 @@
+/* src/RecipeDetails.css */
+.recipe-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-details-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .recipe-details-ingredients,
+  .recipe-details-instructions {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-details-instructions {
+    white-space: pre-wrap; /* Preserve line breaks in the instructions */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .recipe-details-container {
+      max-width: 90%;
+    }
+  
+    .recipe-details-title {
+      font-size: 24px;
+    }
+  
+    .recipe-details-ingredients,
+    .recipe-details-instructions {
+      font-size: 16px;
+    }
+  }
+  
