@@ -5,7 +5,7 @@ import "../CSS/headerFooter.css"; // Importe o arquivo CSS
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Todos os direitos reservados &copy; {new Date().getFullYear()}</p>
+      <p>Trabalho realizado pelos alunos: Alexon e Guilherme &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 };

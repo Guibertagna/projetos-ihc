@@ -12,7 +12,7 @@ const recipes = [
     ingredients: ["ovos", "leite", "farinha", "sal"],
     modoPreparo: "..."
   },
-  // Adicione mais receitas aqui...
+  
 ];
 
 export default recipes;

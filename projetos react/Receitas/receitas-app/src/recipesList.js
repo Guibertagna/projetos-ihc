@@ -11,13 +11,16 @@ const RecipesList = ({ recipes }) => {
       <ul className="recipes-list">
         {recipes.map((recipe) => (
           <li key={recipe.id} className="recipe-item">
-            {/* Renderize a foto da receita, se existir */}
+            {}
             {recipe.photo && (
-              <img src={URL.createObjectURL(recipe.photo)} alt={recipe.title} className="recipe-photo" />
-            )}
-            <Link to={`/recipe/${recipe.id}`} className="recipe-title">
-              {recipe.title}
-            </Link>
+  <div className="recipe-thumbnail-container">
+    <img src={URL.createObjectURL(recipe.photo)} alt={recipe.title} className="recipe-photo" />
+    <Link to={`/recipe/${recipe.id}`} className="recipe-title">
+      {recipe.title}
+    </Link>
+  </div>
+)}
+
           </li>
         ))}
       </ul>
